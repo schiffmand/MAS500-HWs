@@ -1,0 +1,1 @@
+# Print out all the state names from the csv# Coded in the "imperative" stylefrom itertools import isliceimport pandas as pdf = open('2012_US_election_state.csv', 'r')print "Opened file:"obama_tot=0romney_tot=0orig_results = pd.read_csv('2012_US_election_state.csv')print orig_results.sum(axis=0,columns=4)

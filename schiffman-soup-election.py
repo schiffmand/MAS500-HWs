@@ -16,11 +16,9 @@ Libertarian=""
 Green=""
 Others=""
 TotalVotes=""
-table = soup.find("table cellspacing")
-for table in t:
-	trs=soup.find_all('tr')
-	for tr in trs:
-		print tr
+#table = soup.find("table cellspacing")
+
+
 
 #table = soup.find("table")
 #for table in t:
@@ -32,8 +30,11 @@ for table in t:
 # 			g.write(",")
 # 		g.write("\n")
  		
+trs = soup.find_all('tr')
+tds = tr.find_all('td')
  			
-#for row in soup('table')[0].findAll('tr'):
+for row in soup('table')[0].findAll('tr'):
+
 #cells = row.findAll("td")
 #For each "tr" assign a td
 #State=cells[1].find(text=True)
